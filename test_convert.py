@@ -2,7 +2,7 @@
 second part of a string when the first part of the string is a positive
 odd integer.
 """
-from convert_odd_input_from_user import convert
+from convert_odd_input import convert
 
 def test_convert():
     """Assert the correct output for various positive integers given to

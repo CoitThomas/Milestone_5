@@ -2,7 +2,7 @@
 list follows the correct format and conditions and returns False
 otherwise.
 """
-from convert_odd_input_from_user import is_appropriate
+from convert_odd_input import is_appropriate
 
 def test_is_appropriate():
     """Asserts that a given list contains two strings, that the first
