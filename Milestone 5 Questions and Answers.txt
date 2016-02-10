@@ -1,0 +1,30 @@
+What is the difference between python 2.7's input and raw input?
+
+Python 2.7’s function, input(), attempts to interpret and evaluate the input given by the user. This sounds awesome, but had a history of leading to dangerous or undesirable behavior. In contrast, raw_input() captures the input and stores it as a ‘string’. This means you need to manipulate the user input a little in order to get the desired results, but is ultimately a safer option. In Python 3, the input() function was changed to always stores the user input as a ‘string’ so as to avoid this issue. 
+
+
+
+What is the difference between read and write modes for files?
+
+Read mode (‘r’) opens the file for reading the file only. Write mode (‘w’) opens the file for writing to the file only. It will overwrite the file if the file already exists. If it doesn’t exist yet, it will create a new file for writing. As a side note, setting the mode to ‘r+’ allows for both reading of and writing to a file. 
+
+
+
+What problem does the ‘With’ statement solve?
+
+The ‘With’ statement allows common ‘try…except…finally’ usage patterns to be encapsulated for convenient reuse without it being too verbose or having to ‘wrap’ the code in a for-in statement. It does this by utilizing an object to control the behavior of an external piece of code.
+
+
+
+How would I make a directory from python?
+
+In order to make a directory from a python module, the following lines of code are needed:
+import os
+os.mkdir(‘<directoryName>’)
+
+
+
+What's the difference between program > file.txt and file.txt > program?
+
+In this example, program > file.txt would write the output of ‘program’ to ‘file.txt’.
+In contrast, I believe file.txt > program would not do anything as ‘file.txt’ wouldn’t produce any output to write to ‘program’. However, file.txt < program would read the content of file.txt into ‘program’.

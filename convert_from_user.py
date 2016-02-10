@@ -10,7 +10,10 @@ def get_input():
     ####,name
     Receive the input as raw_input.
     """
-    return raw_input("Enter a positive integer and a name (positive_integer,name): ")
+    try: # http://www.nerdparadise.com/tech/python/eofexceptionrawinput/
+        return raw_input()
+    except EOFError:
+        return ' '
 
 if __name__ == "__main__":
     INPUT = get_input()
